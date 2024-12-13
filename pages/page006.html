@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Well-Architected Framework</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AWS Well-Architected Framework</h1>
+    <p>O <strong>Well-Architected Framework</strong>, desenvolvido pela AWS, fornece diretrizes para projetar, implementar e operar sistemas seguros, eficientes e econômicos na nuvem. Ele é baseado em seis pilares principais:</p>
+
+    <h2>1. Excelência Operacional</h2>
+    <p>Foco na execução eficiente e confiável das operações, com ênfase em:</p>
+    <ul>
+        <li>Monitoramento contínuo dos sistemas.</li>
+        <li>Automação de processos para melhorar consistência.</li>
+        <li>Preparação para lidar com falhas e incidentes.</li>
+    </ul>
+    <p><strong>Práticas-chave:</strong></p>
+    <ul>
+        <li>Documentação de processos.</li>
+        <li>Uso de ferramentas como AWS CloudWatch e AWS Systems Manager.</li>
+    </ul>
+
+    <h2>2. Segurança</h2>
+    <p>Garante a proteção de dados, sistemas e ativos contra ameaças, com controles para confidencialidade, integridade e disponibilidade:</p>
+    <ul>
+        <li>Implementação de controles de acesso e identidade.</li>
+        <li>Proteção de dados em trânsito e em repouso.</li>
+        <li>Monitoramento proativo de ameaças.</li>
+    </ul>
+    <p><strong>Práticas-chave:</strong></p>
+    <ul>
+        <li>Uso de AWS Identity and Access Management (IAM).</li>
+        <li>Habilitação de logs com AWS CloudTrail.</li>
+    </ul>
+
+    <h2>3. Confiabilidade</h2>
+    <p>Visa a capacidade de um sistema de se recuperar de falhas e atender aos requisitos de forma consistente:</p>
+    <ul>
+        <li>Configuração de infraestrutura tolerante a falhas.</li>
+        <li>Recuperação e replicação de dados.</li>
+    </ul>
+    <p><strong>Práticas-chave:</strong></p>
+    <ul>
+        <li>Projetar sistemas distribuídos.</li>
+        <li>Uso de backups e recuperação com AWS Backup e Amazon S3.</li>
+    </ul>
+
+    <h2>4. Eficiência de Desempenho</h2>
+    <p>Foco na utilização ideal de recursos para atender à demanda sem sobrecarga:</p>
+    <ul>
+        <li>Seleção de arquiteturas e recursos adequados para o tipo de carga de trabalho.</li>
+        <li>Monitoramento para identificar gargalos.</li>
+    </ul>
+    <p><strong>Práticas-chave:</strong></p>
+    <ul>
+        <li>Uso de serviços gerenciados, como Amazon RDS.</li>
+        <li>Escalabilidade automática com AWS Auto Scaling.</li>
+    </ul>
+
+    <h2>5. Otimização de Custos</h2>
+    <p>Busca eliminar desperdícios e aumentar a eficiência dos gastos:</p>
+    <ul>
+        <li>Uso de modelos de cobrança sob demanda.</li>
+        <li>Monitoramento e análise de custos.</li>
+    </ul>
+    <p><strong>Práticas-chave:</strong></p>
+    <ul>
+        <li>Utilizar AWS Cost Explorer e AWS Budgets.</li>
+        <li>Escolher instâncias reservadas ou savings plans quando apropriado.</li>
+    </ul>
+
+    <h2>6. Sustentabilidade</h2>
+    <p>Considera práticas para minimizar o impacto ambiental de cargas de trabalho:</p>
+    <ul>
+        <li>Redução do consumo energético por meio de otimização de recursos.</li>
+        <li>Escolha de regiões AWS com fontes renováveis de energia.</li>
+    </ul>
+    <p><strong>Práticas-chave:</strong></p>
+    <ul>
+        <li>Consolidar workloads em instâncias otimizadas.</li>
+        <li>Uso de serviços serverless para diminuir o uso de recursos subutilizados.</li>
+    </ul>
+
+    <h2>Como aplicar?</h2>
+    <ol>
+        <li><strong>Revisões regulares:</strong> Use o <strong>Well-Architected Tool</strong> da AWS para analisar e melhorar sua arquitetura.</li>
+        <li><strong>Priorização por pilar:</strong> Identifique os pilares mais críticos para sua carga de trabalho.</li>
+        <li><strong>Automatização e escalabilidade:</strong> Adote serviços que atendam aos princípios do framework.</li>
+    </ol>
+
+    <h2>Princípios Gerais</h2>
+    <p>Além dos pilares, o framework promove conceitos fundamentais para projetar sistemas bem-arquitetados:</p>
+    <ul>
+        <li><strong>Pare de adivinhar a capacidade necessária:</strong> Utilize a elasticidade da nuvem para provisionar recursos sob demanda.</li>
+        <li><strong>Teste sistemas em escala:</strong> Execute testes realistas para garantir que os sistemas se comportam conforme esperado em situações reais.</li>
+        <li><strong>Automatize para tornar a arquitetura evolutiva:</strong> Automatize processos para reduzir a possibilidade de erro humano e melhorar a eficiência.</li>
+        <li><strong>Permita a experimentação:</strong> Utilize ambientes de desenvolvimento e testes para iterar e experimentar novos designs sem impactar a produção.</li>
+        <li><strong>Prepare-se para a falha:</strong> Projete sistemas resilientes, aceitando que falhas podem ocorrer e minimizando seus impactos.</li>
+        <li><strong>Construa com base em mudanças:</strong> Utilize arquiteturas que possam evoluir rapidamente à medida que as necessidades mudam.</li>
+    </ul>
+
+    <h2>Componentes de Suporte</h2>
+    <p>Além dos pilares e princípios gerais, o Well-Architected Framework inclui ferramentas e recursos adicionais para guiar a aplicação prática:</p>
+    <ul>
+        <li><strong>AWS Well-Architected Tool:</strong> Ferramenta gratuita integrada ao console da AWS para revisar, monitorar e melhorar suas cargas de trabalho com base nos princípios do framework.</li>
+        <li><strong>Lentes Especializadas:</strong> Conjuntos de melhores práticas adaptados para casos de uso específicos, como:
+            <ul>
+                <li>Lente para Machine Learning (ML).</li>
+                <li>Lente para IoT.</li>
+                <li>Lente para Analytics.</li>
+                <li>Lente para Serviços Financeiros.</li>
+            </ul>
+        </li>
+        <li><strong>Recomendações para Melhorias:</strong> Listas detalhadas de ações práticas que ajudam a resolver problemas identificados durante as revisões do framework.</li>
+        <li><strong>Arquiteturas de Referência:</strong> Modelos prontos para diversas cargas de trabalho que ajudam a implementar boas práticas rapidamente.</li>
+    </ul>
+
+    <h2>Benefícios Adicionais</h2>
+    <p>Além de cobrir os pilares principais, o framework ajuda a:</p>
+    <ul>
+        <li>Priorizar mudanças com impacto mais significativo no curto prazo.</li>
+        <li>Oferecer um plano claro de modernização e escalabilidade.</li>
+        <li>Garantir alinhamento com os requisitos de conformidade e regulamentação.</li>
+    </ul>
+</body>
+</html>
