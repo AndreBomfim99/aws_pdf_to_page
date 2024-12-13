@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspectos Econômicos do Dimensionamento - AWS Cloud Practitioner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        strong {
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aspectos Econômicos do Dimensionamento</h1>
+    <p>Compreender os aspectos econômicos do dimensionamento é essencial para o exame <strong>AWS Cloud Practitioner CLF-C02</strong>. Aqui estão os conceitos principais:</p>
+
+    <h2>1. Modelo de Pagamento por Uso (Pay-as-you-go)</h2>
+    <ul>
+        <li><strong>Definição:</strong> Pague apenas pelos recursos que usar, sem compromissos antecipados ou gastos fixos.</li>
+        <li><strong>Benefícios:</strong>
+            <ul>
+                <li>Reduz custos iniciais.</li>
+                <li>Garante flexibilidade para ajustar o uso conforme a demanda.</li>
+                <li>Torna os custos previsíveis e diretamente proporcionais à utilização.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>2. Elasticidade e Escalabilidade</h2>
+    <ul>
+        <li><strong>Capacidade elástica:</strong> Permite aumentar ou reduzir recursos automaticamente, com base nas necessidades em tempo real.</li>
+        <li><strong>Impacto econômico:</strong>
+            <ul>
+                <li>Evita o pagamento por capacidade ociosa.</li>
+                <li>Reduz custos associados a picos de tráfego ou sazonalidade.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>3. Tipos de Instâncias e Preços</h2>
+    <ul>
+        <li><strong>Instâncias sob demanda:</strong> Pagamento por hora ou segundo de uso, ideal para cargas de trabalho imprevisíveis.</li>
+        <li><strong>Instâncias reservadas:</strong> Compromisso de longo prazo com descontos de até 75%, ideal para cargas estáveis.</li>
+        <li><strong>Instâncias spot:</strong> Descontos de até 90%, recomendadas para cargas tolerantes a interrupções.</li>
+    </ul>
+
+    <h2>4. Serviços Gerenciados e Sem Servidor</h2>
+    <ul>
+        <li><strong>Redução de custos operacionais:</strong> Serviços como Amazon RDS e AWS Lambda eliminam a necessidade de gerenciar infraestrutura.</li>
+        <li><strong>Cobrança por uso:</strong> Pagamento com base em chamadas de API ou tempo de execução.</li>
+    </ul>
+
+    <h2>5. Camada Gratuita (Free Tier)</h2>
+    <ul>
+        <li><strong>Definição:</strong> Oferece uso gratuito de serviços da AWS até certos limites, como:
+            <ul>
+                <li>750 horas de uso do Amazon EC2 (instâncias t2.micro).</li>
+                <li>5 GB de armazenamento no Amazon S3.</li>
+                <li>1 milhão de solicitações no AWS Lambda.</li>
+            </ul>
+        </li>
+        <li><strong>Benefício:</strong> Reduz custos iniciais para novos usuários e startups.</li>
+    </ul>
+
+    <h2>6. Redução de Custos com a Infraestrutura Local</h2>
+    <ul>
+        <li><strong>Comparação:</strong> A AWS elimina a necessidade de grandes investimentos iniciais, permitindo pagamento incremental.</li>
+    </ul>
+
+    <h2>7. Ferramentas para Otimização de Custos</h2>
+    <ul>
+        <li><strong>AWS Cost Explorer:</strong> Visualiza e analisa gastos ao longo do tempo.</li>
+        <li><strong>AWS Trusted Advisor:</strong> Recomendações de otimização de custos.</li>
+        <li><strong>AWS Budgets:</strong> Define limites de gastos e envia alertas.</li>
+    </ul>
+
+    <h2>8. Arquitetura Otimizada para Custos</h2>
+    <ul>
+        <li><strong>Princípios do Well-Architected Framework:</strong>
+            <ul>
+                <li>Escolha de serviços adequados ao tipo de carga de trabalho.</li>
+                <li>Uso de instâncias reservadas e spot para workloads específicas.</li>
+                <li>Monitoramento e ajuste constante para evitar custos desnecessários.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
