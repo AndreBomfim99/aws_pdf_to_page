@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estratégias de Migração AWS</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Identificação de Estratégias de Migração AWS</h1>
+
+    <div class="section">
+        <h2>1. Replicação de Banco de Dados</h2>
+        <ul>
+            <li><strong>AWS Database Migration Service (DMS):</strong> Facilita a migração de bancos de dados locais para a nuvem AWS com downtime mínimo.</li>
+            <li><strong>Continuidade Operacional:</strong> Permite replicar dados em tempo real, garantindo consistência durante a transição.</li>
+            <li><strong>Suporte a Várias Plataformas:</strong> Compatível com bancos de dados como Oracle, MySQL, SQL Server, PostgreSQL, entre outros.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>2. Uso do AWS Snowball</h2>
+        <ul>
+            <li><strong>Transferência de Grandes Volumes de Dados:</strong> AWS Snowball permite a migração de petabytes de dados de forma física e eficiente.</li>
+            <li><strong>Economia de Tempo e Custos:</strong> Evita os altos custos e limitações de largura de banda associados à transferência via internet.</li>
+            <li><strong>Segurança:</strong> Dispositivos criptografados garantem a integridade e proteção dos dados durante a migração.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Migração Híbrida</h2>
+        <ul>
+            <li><strong>Estratégia Gradual:</strong> Combina soluções locais (on-premises) e AWS, permitindo uma transição mais suave.</li>
+            <li><strong>AWS Storage Gateway:</strong> Facilita o acesso a dados armazenados na nuvem sem grandes interrupções operacionais.</li>
+            <li><strong>Flexibilidade:</strong> Empresas podem priorizar sistemas críticos enquanto mantêm parte da infraestrutura local.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Migração com AWS DataSync</h2>
+        <ul>
+            <li><strong>Automatização:</strong> Transfere grandes volumes de dados entre sistemas locais e AWS de forma automatizada.</li>
+            <li><strong>Desempenho:</strong> Acelera a migração, com taxas de transferência superiores às ferramentas tradicionais.</li>
+            <li><strong>Segurança:</strong> Criptografia end-to-end garante a proteção dos dados durante a transferência.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Práticas Recomendadas</h2>
+        <ul>
+            <li><strong>Planejamento Detalhado:</strong> Avalie sistemas e dependências antes de escolher a estratégia de migração.</li>
+            <li><strong>Teste em Pequena Escala:</strong> Realize migrações-piloto para validar o desempenho e identificar possíveis problemas.</li>
+            <li><strong>Monitoramento Contínuo:</strong> Utilize serviços AWS como CloudWatch para monitorar a performance durante a migração.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
