@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captura e Localização de Logs na AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Captura e Localização de Logs na AWS</h1>
+
+    <p>Os logs são uma parte essencial da segurança na nuvem, permitindo que organizações monitorem atividades, detectem anomalias e auditem eventos em seus ambientes. A <strong>Amazon Web Services (AWS)</strong> oferece diversas ferramentas para capturar, armazenar e localizar logs relacionados à segurança.</p>
+
+    <h2>Ferramentas da AWS para Captura de Logs</h2>
+    <table>
+        <tr>
+            <th>Ferramenta</th>
+            <th>Finalidade</th>
+        </tr>
+        <tr>
+            <td><strong>AWS CloudTrail</strong></td>
+            <td>Rastreia e registra todas as chamadas de API na conta AWS, incluindo ações de serviços e mudanças de configuração.</td>
+        </tr>
+        <tr>
+            <td><strong>Amazon CloudWatch</strong></td>
+            <td>Monitora e coleta métricas e logs de serviços e aplicações executados na AWS.</td>
+        </tr>
+        <tr>
+            <td><strong>Amazon GuardDuty</strong></td>
+            <td>Detecta ameaças potenciais com base na análise de logs, como eventos do CloudTrail e dados de DNS.</td>
+        </tr>
+        <tr>
+            <td><strong>AWS Config</strong></td>
+            <td>Rastreia mudanças na configuração de recursos para garantir conformidade.</td>
+        </tr>
+        <tr>
+            <td><strong>VPC Flow Logs</strong></td>
+            <td>Captura informações sobre tráfego de rede dentro das VPCs (Virtual Private Clouds).</td>
+        </tr>
+    </table>
+
+    <h2>Como Localizar Logs Específicos</h2>
+    <h3>1. Eventos de Acesso e Mudança</h3>
+    <p>Use o <strong>AWS CloudTrail</strong> para localizar eventos relacionados a acessos, chamadas de API ou mudanças de configuração. Os logs do CloudTrail são armazenados no Amazon S3 e podem ser consultados através do <strong>CloudTrail Insights</strong>.</p>
+
+    <h3>2. Atividade de Rede</h3>
+    <p>Para monitorar tráfego de rede, habilite <strong>VPC Flow Logs</strong>. Esses logs capturam informações detalhadas sobre conexões de entrada e saída na VPC.</p>
+
+    <h3>3. Métricas e Análise em Tempo Real</h3>
+    <p>Utilize o <strong>Amazon CloudWatch Logs</strong> para agregar e analisar logs em tempo real. Você pode criar alarmes para detectar comportamentos inesperados.</p>
+
+    <h3>4. Detecção de Ameaças</h3>
+    <p>Implemente o <strong>Amazon GuardDuty</strong> para identificar possíveis ameaças com base em eventos e logs analisados por machine learning.</p>
+
+    <h3>5. Rastreamento de Conformidade</h3>
+    <p>O <strong>AWS Config</strong> permite verificar quais recursos estão em conformidade com as políticas estabelecidas. Logs detalhados ajudam na auditoria e análise de mudanças.</p>
+
+    <h2>Boas Práticas</h2>
+    <ul>
+        <li><strong>Centralize os Logs:</strong> Utilize o Amazon S3 para armazenar e organizar logs de diferentes fontes.</li>
+        <li><strong>Automatize a Análise:</strong> Integre o Amazon CloudWatch com AWS Lambda para processar eventos automaticamente.</li>
+        <li><strong>Implemente Alertas:</strong> Configure alertas em CloudWatch para notificar eventos críticos.</li>
+    </ul>
+
+    <h3>Conclusão</h3>
+    <p>Capturar e localizar logs de segurança na AWS é essencial para proteger sua infraestrutura e aplicações. Ferramentas como CloudTrail, CloudWatch e GuardDuty fornecem insights valiosos que ajudam na detecção de ameaças e na manutenção de conformidade. Com essas soluções, você pode monitorar e responder rapidamente a incidentes, garantindo um ambiente seguro e eficiente.</p>
+</body>
+</html>

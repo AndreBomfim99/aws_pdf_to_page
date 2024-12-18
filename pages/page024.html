@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsabilidades Compartilhadas entre Cliente e AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descrição das Responsabilidades Compartilhadas entre Cliente e AWS</h1>
+
+    <p>O <strong>Modelo de Responsabilidade Compartilhada</strong> da AWS define as responsabilidades conjuntas entre a AWS e seus clientes. Enquanto a AWS gerencia a infraestrutura física e os serviços gerenciados, os clientes são responsáveis por configurações seguras e o gerenciamento de suas aplicações e dados.</p>
+
+    <h2>O Conceito de Responsabilidade Compartilhada</h2>
+    <p>As responsabilidades compartilhadas envolvem a interseção entre a <strong>segurança da nuvem</strong> (AWS) e a <strong>segurança na nuvem</strong> (cliente). Isso garante a segurança geral dos serviços utilizados.</p>
+
+    <h2>Principais Responsabilidades Compartilhadas</h2>
+    <table>
+        <tr>
+            <th>Responsabilidade</th>
+            <th>Responsabilidade da AWS</th>
+            <th>Responsabilidade do Cliente</th>
+        </tr>
+        <tr>
+            <td><strong>Segurança Física</strong></td>
+            <td>A AWS protege os data centers e toda a infraestrutura física.</td>
+            <td>Sem responsabilidade direta do cliente.</td>
+        </tr>
+        <tr>
+            <td><strong>Gerenciamento de Sistema Operacional</strong></td>
+            <td>Se for um serviço gerenciado (ex.: RDS), a AWS gerencia o sistema subjacente.</td>
+            <td>Se usar EC2, o cliente gerencia o sistema operacional hospedado na instância.</td>
+        </tr>
+        <tr>
+            <td><strong>Atualização de Patches</strong></td>
+            <td>A AWS aplica patches no hardware e nos serviços gerenciados.</td>
+            <td>O cliente aplica patches em sistemas operacionais e aplicações instaladas.</td>
+        </tr>
+        <tr>
+            <td><strong>Segurança de Rede</strong></td>
+            <td>A AWS protege a infraestrutura de rede subjacente.</td>
+            <td>O cliente configura grupos de segurança, VPCs e ACLs para proteger o tráfego de rede.</td>
+        </tr>
+        <tr>
+            <td><strong>Gerenciamento de Dados</strong></td>
+            <td>A AWS fornece serviços de armazenamento seguros.</td>
+            <td>O cliente protege, gerencia e faz backup de seus dados armazenados.</td>
+        </tr>
+    </table>
+
+    <h2>Exemplo Prático</h2>
+    <p>Suponha que você utilize o <strong>Amazon EC2</strong> para hospedar uma aplicação:</p>
+    <ul>
+        <li><strong>AWS:</strong> Gerencia a infraestrutura física, como data centers e redes.</li>
+        <li><strong>Cliente:</strong> Configura o sistema operacional, aplica patches, implementa grupos de segurança e protege os dados da aplicação.</li>
+    </ul>
+
+    <h2>Benefícios do Modelo Compartilhado</h2>
+    <ul>
+        <li><strong>Flexibilidade:</strong> Clientes podem implementar controles adicionais conforme suas necessidades.</li>
+        <li><strong>Redução de Tarefas Operacionais:</strong> A AWS gerencia partes complexas da infraestrutura.</li>
+        <li><strong>Segurança Colaborativa:</strong> A cooperação entre cliente e AWS garante um ambiente mais seguro.</li>
+    </ul>
+
+    <h3>Conclusão</h3>
+    <p>No modelo de responsabilidade compartilhada, tanto a AWS quanto os clientes têm papéis importantes na segurança e na gestão de infraestrutura e serviços. Compreender essas responsabilidades é essencial para operar com segurança e eficiência na nuvem.</p>
+</body>
+</html>

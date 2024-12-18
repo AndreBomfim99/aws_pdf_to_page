@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsabilidades do Cliente na AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descrição das Responsabilidades do Cliente na AWS</h1>
+
+    <p>No <strong>Modelo de Responsabilidade Compartilhada</strong> da AWS, o cliente tem um papel ativo na gestão e segurança dos serviços e dados que utiliza na nuvem. Entender essas responsabilidades é essencial para garantir que a infraestrutura esteja configurada corretamente e em conformidade com boas práticas.</p>
+
+    <h2>Responsabilidades Gerais do Cliente</h2>
+    <p>As responsabilidades do cliente variam dependendo do serviço da AWS utilizado, mas incluem os seguintes aspectos gerais:</p>
+    <ul>
+        <li><strong>Gerenciamento de Identidade e Acesso:</strong> Configurar e monitorar as permissões de usuários e funções utilizando o AWS IAM (Identity and Access Management).</li>
+        <li><strong>Configurações de Segurança:</strong> Implementar medidas de segurança adicionais, como criptografia de dados em trânsito e em repouso.</li>
+        <li><strong>Configuração dos Serviços:</strong> Garantir que os serviços sejam configurados adequadamente para atender aos requisitos de desempenho e segurança.</li>
+        <li><strong>Gerenciamento de Dados:</strong> Proteger e fazer backup de dados armazenados em serviços como Amazon S3 e Amazon RDS.</li>
+        <li><strong>Manutenção de Sistemas:</strong> Aplicar patches e atualizações em sistemas operacionais e aplicações em instâncias EC2.</li>
+    </ul>
+
+    <h2>Exemplos de Responsabilidades Específicas</h2>
+    <table>
+        <tr>
+            <th>Serviço</th>
+            <th>Responsabilidades do Cliente</th>
+        </tr>
+        <tr>
+            <td><strong>Amazon EC2</strong></td>
+            <td>Configurar grupos de segurança, gerenciar o sistema operacional, instalar aplicações e aplicar patches.</td>
+        </tr>
+        <tr>
+            <td><strong>Amazon S3</strong></td>
+            <td>Definir políticas de acesso e permissões, proteger dados sensíveis com criptografia e monitorar logs de acesso.</td>
+        </tr>
+        <tr>
+            <td><strong>Amazon RDS</strong></td>
+            <td>Gerenciar configurações do banco de dados, proteger conexões com SSL/TLS e realizar backups regulares.</td>
+        </tr>
+        <tr>
+            <td><strong>AWS Lambda</strong></td>
+            <td>Gerenciar o código das funções e implementar lógicas seguras para as aplicações.</td>
+        </tr>
+    </table>
+
+    <h2>Boas Práticas para Clientes</h2>
+    <ul>
+        <li><strong>Monitoramento Contínuo:</strong> Utilize serviços como Amazon CloudWatch e AWS Config para monitorar o uso e identificar falhas de configuração.</li>
+        <li><strong>Segurança de Credenciais:</strong> Use credenciais temporárias e evite armazenar chaves de acesso em aplicações.</li>
+        <li><strong>Automatização:</strong> Automatize tarefas repetitivas com AWS CloudFormation ou AWS Systems Manager para garantir consistência.</li>
+        <li><strong>Treinamento:</strong> Certifique-se de que sua equipe entende as responsabilidades e boas práticas na nuvem.</li>
+    </ul>
+
+    <h3>Conclusão</h3>
+    <p>Na AWS, as responsabilidades do cliente desempenham um papel vital na manutenção da segurança e eficiência da infraestrutura. Ao adotar boas práticas e monitorar constantemente suas aplicações e serviços, os clientes podem garantir que suas soluções sejam confiáveis, escaláveis e seguras.</p>
+</body>
+</html>

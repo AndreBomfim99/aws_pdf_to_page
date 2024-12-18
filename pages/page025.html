@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudança de Responsabilidades na AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mudança das Responsabilidades da AWS e do Cliente de Acordo com o Serviço Usado</h1>
+
+    <p>As responsabilidades da <strong>AWS</strong> e do cliente variam conforme o serviço utilizado. A AWS fornece diferentes níveis de gerenciamento, desde infraestruturas totalmente gerenciadas até serviços que exigem maior controle do cliente.</p>
+
+    <h2>Variação das Responsabilidades</h2>
+    <p>O Modelo de Responsabilidade Compartilhada da AWS adapta-se aos diferentes tipos de serviços:</p>
+    <ul>
+        <li><strong>Infraestrutura como Serviço (IaaS):</strong> Mais responsabilidades para o cliente (ex.: Amazon EC2).</li>
+        <li><strong>Plataforma como Serviço (PaaS):</strong> A AWS gerencia mais componentes (ex.: Amazon RDS).</li>
+        <li><strong>Função como Serviço (FaaS):</strong> A AWS gerencia quase tudo, enquanto o cliente foca apenas no código (ex.: AWS Lambda).</li>
+    </ul>
+
+    <h2>Exemplos de Mudança de Responsabilidades</h2>
+    <table>
+        <tr>
+            <th>Serviço</th>
+            <th>Responsabilidade da AWS</th>
+            <th>Responsabilidade do Cliente</th>
+        </tr>
+        <tr>
+            <td><strong>Amazon EC2 (IaaS)</strong></td>
+            <td>Gerenciar infraestrutura física, rede e hipervisor.</td>
+            <td>Configurar sistema operacional, aplicar patches, gerenciar aplicações e dados.</td>
+        </tr>
+        <tr>
+            <td><strong>Amazon RDS (PaaS)</strong></td>
+            <td>Gerenciar infraestrutura, sistema operacional, instalação e patches do banco de dados.</td>
+            <td>Configurar parâmetros do banco de dados, gerenciar acesso e proteger os dados.</td>
+        </tr>
+        <tr>
+            <td><strong>AWS Lambda (FaaS)</strong></td>
+            <td>Gerenciar infraestrutura, escalabilidade, segurança do ambiente de execução.</td>
+            <td>Fornecer código da função, lógica da aplicação e configurar triggers.</td>
+        </tr>
+        <tr>
+            <td><strong>Amazon S3</strong></td>
+            <td>Gerenciar infraestrutura, alta disponibilidade e durabilidade dos dados.</td>
+            <td>Configurar políticas de acesso, criptografar dados e monitorar atividades.</td>
+        </tr>
+    </table>
+
+    <h2>Resumo da Distribuição</h2>
+    <p>A figura a seguir ilustra como a responsabilidade se desloca entre a AWS e o cliente com base no nível de serviço:</p>
+    <ul>
+        <li><strong>IaaS:</strong> Mais controle e responsabilidade do cliente.</li>
+        <li><strong>PaaS:</strong> Gerenciamento compartilhado, com menos responsabilidades para o cliente.</li>
+        <li><strong>FaaS:</strong> A AWS gerencia quase tudo; o cliente se preocupa apenas com o código.</li>
+    </ul>
+
+    <h2>Exemplo Prático</h2>
+    <p>Suponha que você desenvolva uma aplicação usando:</p>
+    <ul>
+        <li><strong>Amazon EC2:</strong> Você instala o sistema operacional, aplica patches e gerencia o servidor.</li>
+        <li><strong>Amazon RDS:</strong> A AWS cuida da infraestrutura e das atualizações; você configura e gerencia o banco de dados.</li>
+        <li><strong>AWS Lambda:</strong> Você carrega apenas o código da aplicação, e a AWS gerencia toda a infraestrutura.</li>
+    </ul>
+
+    <h3>Conclusão</h3>
+    <p>As responsabilidades entre AWS e cliente mudam conforme o serviço utilizado. Compreender essas variações é fundamental para usar os serviços da AWS de maneira eficiente, segura e alinhada com as necessidades do negócio.</p>
+</body>
+</html>
