@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estratégias de Licenciamento na AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Compreensão das Diferenças entre as Estratégias de Licenciamento na AWS</h1>
+    <p>Na <strong>Amazon Web Services (AWS)</strong>, existem diferentes estratégias de licenciamento que ajudam a gerenciar custos e garantir a conformidade legal. As duas principais abordagens são o modelo <strong>Bring-Your-Own-License (BYOL)</strong> e as <strong>Licenças Incluídas</strong>. A escolha entre essas estratégias depende das necessidades da organização e do ambiente de infraestrutura.</p>
+
+    <h2>1. O que é o Modelo BYOL (Bring-Your-Own-License)?</h2>
+    <p>No modelo <strong>BYOL</strong>, as organizações utilizam licenças de software que já possuem, transferindo-as para a infraestrutura da AWS. Isso é ideal para empresas que já fizeram investimentos significativos em licenças de fornecedores, como Microsoft, Oracle ou outros softwares.</p>
+    <ul>
+        <li><strong>Flexibilidade:</strong> Permite aproveitar licenças existentes em instâncias na nuvem.</li>
+        <li><strong>Redução de Custos:</strong> Evita gastos duplicados com novas licenças.</li>
+        <li><strong>Gerenciamento:</strong> Requer monitoramento para garantir a conformidade com os termos do fornecedor.</li>
+    </ul>
+
+    <h2>2. O que são Licenças Incluídas?</h2>
+    <p>Com as <strong>Licenças Incluídas</strong>, a AWS oferece um modelo de pagamento em que o custo da licença está integrado ao serviço. Isso simplifica o gerenciamento e elimina a necessidade de possuir licenças separadas.</p>
+    <ul>
+        <li><strong>Praticidade:</strong> A AWS gerencia a licença como parte do serviço.</li>
+        <li><strong>Escalabilidade:</strong> Facilita a expansão rápida de recursos sem preocupação com licenças adicionais.</li>
+        <li><strong>Transparência de Custos:</strong> Os custos da licença são incluídos no preço do serviço (Pay-as-You-Go).</li>
+    </ul>
+
+    <h2>3. Comparativo entre BYOL e Licenças Incluídas</h2>
+    <table>
+        <tr>
+            <th>Aspecto</th>
+            <th>BYOL</th>
+            <th>Licenças Incluídas</th>
+        </tr>
+        <tr>
+            <td>Investimento Inicial</td>
+            <td>Reutiliza licenças já adquiridas.</td>
+            <td>Custos integrados no preço do serviço.</td>
+        </tr>
+        <tr>
+            <td>Gerenciamento</td>
+            <td>Responsabilidade do cliente.</td>
+            <td>Gerenciado pela AWS.</td>
+        </tr>
+        <tr>
+            <td>Escalabilidade</td>
+            <td>Requer aquisição de licenças adicionais.</td>
+            <td>Escala sob demanda sem preocupações.</td>
+        </tr>
+        <tr>
+            <td>Conformidade</td>
+            <td>Necessita auditoria constante.</td>
+            <td>A AWS garante conformidade de licenciamento.</td>
+        </tr>
+    </table>
+
+    <h2>4. Benefícios e Cenários de Uso</h2>
+    <h3>BYOL</h3>
+    <ul>
+        <li>Ideal para empresas com grandes investimentos em licenças legadas.</li>
+        <li>Adequado para migrações híbridas ou workloads previsíveis.</li>
+    </ul>
+    <h3>Licenças Incluídas</h3>
+    <ul>
+        <li>Recomendado para startups ou novas implantações na nuvem.</li>
+        <li>Uso ideal em cenários de escalabilidade dinâmica e workloads imprevisíveis.</li>
+    </ul>
+
+    <h2>5. Ferramentas da AWS para Gerenciamento de Licenças</h2>
+    <ul>
+        <li><strong>AWS License Manager:</strong> Facilita o rastreamento e gerenciamento de licenças BYOL.</li>
+        <li><strong>Amazon EC2 com Licença Incluída:</strong> Proporciona um modelo de pagamento integrado com licenças de sistemas operacionais como Windows Server.</li>
+    </ul>
+
+    <h2>Conclusão</h2>
+    <p>Compreender as diferenças entre o modelo <strong>BYOL</strong> e as <strong>Licenças Incluídas</strong> é essencial para otimizar custos e gerenciar eficiência na <strong>AWS</strong>. A escolha da estratégia dependerá das necessidades do seu negócio, uso de licenças existentes e demanda de escalabilidade.</p>
+
+    <p>Para mais informações, visite a <a href="https://aws.amazon.com/pt/license-manager/">página do AWS License Manager</a>.</p>
+</body>
+</html>

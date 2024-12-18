@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensionamento Correto na AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Compreensão do Conceito de Dimensionamento Correto na AWS</h1>
+    
+    <p>No contexto da <strong>Amazon Web Services (AWS)</strong>, o <em>dimensionamento correto</em> é um conceito crítico que envolve ajustar recursos computacionais para atender às necessidades reais de uma aplicação ou serviço. O objetivo é garantir a eficiência operacional, otimizando o desempenho e reduzindo custos desnecessários.</p>
+    
+    <h2>Por que o Dimensionamento Correto é Importante?</h2>
+    <ul>
+        <li><strong>Redução de Custos:</strong> Evita o pagamento por recursos não utilizados ou subutilizados.</li>
+        <li><strong>Melhoria de Desempenho:</strong> Garante que a aplicação tenha os recursos necessários para operar eficientemente.</li>
+        <li><strong>Escalabilidade:</strong> Facilita ajustes automáticos conforme a demanda aumenta ou diminui.</li>
+        <li><strong>Uso Sustentável:</strong> Promove uma alocação consciente dos recursos da nuvem.</li>
+    </ul>
+
+    <h2>Práticas de Dimensionamento Correto</h2>
+    <p>Para implementar o dimensionamento correto, considere as seguintes práticas:</p>
+    <table>
+        <tr>
+            <th>Prática</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>Monitoramento Contínuo</td>
+            <td>Utilize ferramentas como o <strong>Amazon CloudWatch</strong> para monitorar o uso de recursos e identificar gargalos ou ociosidade.</td>
+        </tr>
+        <tr>
+            <td>Testes de Carga</td>
+            <td>Realize testes de carga com serviços como o <strong>AWS Auto Scaling</strong> para prever a capacidade necessária em diferentes cenários.</td>
+        </tr>
+        <tr>
+            <td>Uso de Instâncias Flexíveis</td>
+            <td>Adote <strong>instâncias reservadas ou spot</strong> para cargas previsíveis e econômicas.</td>
+        </tr>
+        <tr>
+            <td>Automatização</td>
+            <td>Implemente <em>Auto Scaling</em> para ajustar recursos de forma automática conforme a demanda.</td>
+        </tr>
+    </table>
+
+    <h2>Exemplo Prático</h2>
+    <p>Suponha que uma aplicação hospedada no <strong>Amazon EC2</strong> tenha picos de tráfego em horários específicos. Com o <em>Auto Scaling</em>, é possível adicionar instâncias durante os picos e removê-las quando a demanda diminuir, mantendo a aplicação responsiva e econômica.</p>
+    
+    <h3>Conclusão</h3>
+    <p>O dimensionamento correto na AWS é essencial para garantir a alocação eficiente de recursos. Ao aplicar boas práticas de monitoramento, automação e testes, é possível otimizar o desempenho e reduzir custos, promovendo uma infraestrutura escalável e alinhada às necessidades do negócio.</p>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Responsabilidade Compartilhada da AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelo de Responsabilidade Compartilhada da AWS</h1>
+
+    <p>O <strong>Modelo de Responsabilidade Compartilhada</strong> da <strong>Amazon Web Services (AWS)</strong> define a distribuição de responsabilidades entre a AWS e o cliente no que diz respeito à segurança e conformidade na nuvem.</p>
+
+    <h2>Conceito do Modelo</h2>
+    <p>Na AWS, a responsabilidade é compartilhada entre:</p>
+    <ul>
+        <li><strong>AWS:</strong> Responsável pela <em>segurança da nuvem</em>, ou seja, proteger a infraestrutura que executa os serviços.</li>
+        <li><strong>Cliente:</strong> Responsável pela <em>segurança na nuvem</em>, ou seja, a configuração segura e correta dos serviços utilizados.</li>
+    </ul>
+
+    <h2>Responsabilidades da AWS</h2>
+    <p>A AWS é responsável por:</p>
+    <ul>
+        <li>Manter a segurança física dos data centers.</li>
+        <li>Gerenciar hardware, redes e infraestrutura de software.</li>
+        <li>Fornecer serviços de segurança como criptografia de dados em repouso e em trânsito.</li>
+        <li>Garantir a disponibilidade e confiabilidade da infraestrutura.</li>
+    </ul>
+
+    <h2>Responsabilidades do Cliente</h2>
+    <p>Os clientes são responsáveis por:</p>
+    <ul>
+        <li>Configurar adequadamente serviços e recursos utilizados (por exemplo, permissões e acesso no Amazon S3).</li>
+        <li>Gerenciar credenciais e identidade com o <strong>AWS IAM</strong> (Identity and Access Management).</li>
+        <li>Implementar medidas adicionais de segurança, como firewalls e criptografia de aplicações.</li>
+        <li>Manter os sistemas operacionais e aplicações seguros, caso utilizem instâncias EC2.</li>
+    </ul>
+
+    <h2>Exemplo do Modelo</h2>
+    <table>
+        <tr>
+            <th>Responsabilidade</th>
+            <th>Exemplo</th>
+        </tr>
+        <tr>
+            <td><strong>AWS</strong></td>
+            <td>Garantir que os servidores físicos dos data centers estejam protegidos contra acesso não autorizado.</td>
+        </tr>
+        <tr>
+            <td><strong>Cliente</strong></td>
+            <td>Configurar políticas de acesso corretas no Amazon S3 para evitar exposição indevida de dados.</td>
+        </tr>
+        <tr>
+            <td><strong>Cliente</strong></td>
+            <td>Atualizar os patches de segurança nos sistemas operacionais utilizados em instâncias Amazon EC2.</td>
+        </tr>
+    </table>
+
+    <h2>Benefícios do Modelo</h2>
+    <ul>
+        <li><strong>Clareza:</strong> Define responsabilidades claras entre provedor e cliente.</li>
+        <li><strong>Segurança Aprimorada:</strong> A responsabilidade compartilhada evita lacunas de segurança.</li>
+        <li><strong>Flexibilidade:</strong> Os clientes podem implementar soluções adicionais conforme suas necessidades.</li>
+    </ul>
+
+    <h3>Conclusão</h3>
+    <p>O modelo de responsabilidade compartilhada da AWS é essencial para entender a dinâmica de segurança e conformidade na nuvem. A AWS oferece uma infraestrutura segura, enquanto os clientes mantêm o controle e a segurança das configurações de seus serviços e dados. Essa colaboração garante um ambiente seguro e eficiente.</p>
+</body>
+</html>

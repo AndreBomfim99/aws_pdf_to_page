@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes do Modelo de Responsabilidade Compartilhada da AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reconhecimento dos Componentes do Modelo de Responsabilidade Compartilhada da AWS</h1>
+
+    <p>O <strong>Modelo de Responsabilidade Compartilhada</strong> da <strong>AWS</strong> define como as tarefas relacionadas à segurança são distribuídas entre o provedor de serviços em nuvem (AWS) e o cliente. A compreensão dos componentes desse modelo é essencial para a segurança e conformidade na nuvem.</p>
+
+    <h2>Componentes Principais</h2>
+    <table>
+        <tr>
+            <th>Componente</th>
+            <th>Responsabilidade</th>
+            <th>Exemplo</th>
+        </tr>
+        <tr>
+            <td><strong>Segurança da Nuvem</strong></td>
+            <td>Responsabilidade da AWS. Inclui a proteção da infraestrutura física e lógica da nuvem.</td>
+            <td>A AWS garante a segurança dos data centers, hardwares, redes e hipervisores.</td>
+        </tr>
+        <tr>
+            <td><strong>Segurança na Nuvem</strong></td>
+            <td>Responsabilidade do Cliente. Inclui a configuração segura dos serviços e proteção dos dados.</td>
+            <td>O cliente configura o controle de acesso no Amazon S3 e implementa criptografia.</td>
+        </tr>
+        <tr>
+            <td><strong>Gerenciamento de Recursos</strong></td>
+            <td>Responsabilidade Compartilhada. A AWS fornece os serviços; o cliente decide como configurá-los.</td>
+            <td>Clientes configuram instâncias EC2 ou grupos de segurança conforme suas necessidades.</td>
+        </tr>
+        <tr>
+            <td><strong>Atualizações e Patches</strong></td>
+            <td>A AWS gerencia atualizações do sistema host; o cliente gerencia patches em sistemas convidados.</td>
+            <td>Clientes aplicam patches em sistemas operacionais de instâncias EC2.</td>
+        </tr>
+    </table>
+
+    <h2>Exemplo Prático</h2>
+    <p>Suponha que você esteja utilizando instâncias <strong>Amazon EC2</strong> para hospedar uma aplicação. No modelo de responsabilidade compartilhada:</p>
+    <ul>
+        <li><strong>AWS:</strong> É responsável por manter a segurança física do data center, hardwares e redes.</li>
+        <li><strong>Cliente:</strong> É responsável por configurar grupos de segurança, aplicar patches no sistema operacional e gerenciar credenciais de acesso.</li>
+    </ul>
+
+    <h2>Benefícios do Modelo</h2>
+    <ul>
+        <li><strong>Divisão de Tarefas:</strong> Reduz a carga operacional para o cliente.</li>
+        <li><strong>Flexibilidade:</strong> O cliente tem liberdade para implementar controles adicionais de segurança.</li>
+        <li><strong>Segurança Confiável:</strong> A AWS garante a proteção da infraestrutura física e lógica.</li>
+    </ul>
+
+    <h3>Conclusão</h3>
+    <p>O Modelo de Responsabilidade Compartilhada da AWS fornece um entendimento claro das responsabilidades entre a AWS e os clientes. Isso permite a implementação de soluções seguras e eficientes, garantindo conformidade e alta disponibilidade dos serviços.</p>
+</body>
+</html>
