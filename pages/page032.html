@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opções de Criptografia na AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Opções de Criptografia na AWS</h1>
+    <p>A criptografia é um elemento essencial para garantir a segurança de dados na nuvem. A Amazon Web Services (AWS) oferece diversas opções de criptografia que podem ser aplicadas em trânsito e em repouso, assegurando a proteção de informações sensíveis em diferentes estágios de armazenamento e transferência.</p>
+
+    <h2>Criptografia em Repouso</h2>
+    <p>A criptografia em repouso protege os dados armazenados em serviços da AWS contra acessos não autorizados. As opções incluem:</p>
+    <ul>
+        <li><strong>Amazon S3:</strong> Suporta criptografia nativa utilizando AES-256 ou AWS Key Management Service (KMS).</li>
+        <li><strong>Amazon RDS:</strong> Oferece criptografia de bancos de dados com chaves gerenciadas pelo AWS KMS.</li>
+        <li><strong>Amazon EBS:</strong> Permite criptografar volumes com integração ao KMS, garantindo proteção a discos de armazenamento.</li>
+    </ul>
+
+    <h2>Criptografia em Trânsito</h2>
+    <p>A criptografia em trânsito protege os dados durante a transferência entre dispositivos, redes ou serviços. A AWS suporta:</p>
+    <ul>
+        <li><strong>Protocolo HTTPS:</strong> Utiliza SSL/TLS para criptografar comunicações com serviços como Amazon S3 e Amazon CloudFront.</li>
+        <li><strong>VPNs:</strong> As AWS Site-to-Site VPNs oferecem tunelamento seguro para transferência de dados.</li>
+        <li><strong>Amazon API Gateway:</strong> Suporta integração com TLS para proteger a troca de dados via APIs.</li>
+    </ul>
+
+    <h2>Gerenciamento de Chaves</h2>
+    <p>O AWS Key Management Service (KMS) é a solução centralizada da AWS para gerenciamento de chaves de criptografia. Ele permite:</p>
+    <ul>
+        <li>Criação e gerenciamento de chaves mestras (CMKs).</li>
+        <li>Integração com serviços da AWS para criptografia automática.</li>
+        <li>Auditoria de uso de chaves através do AWS CloudTrail.</li>
+    </ul>
+
+    <h2>Boas Práticas</h2>
+    <ul>
+        <li>Habilitar a criptografia em repouso para todos os serviços que armazenam dados sensíveis.</li>
+        <li>Utilizar criptografia em trânsito em todas as comunicações sensíveis.</li>
+        <li>Configurar o KMS para gerenciamento centralizado de chaves.</li>
+        <li>Implementar monitoramento e auditorias para garantir conformidade.</li>
+    </ul>
+
+    <h2>Conclusão</h2>
+    <p>Com a combinação de criptografia em trânsito, criptografia em repouso e gerenciamento eficaz de chaves, a AWS fornece as ferramentas necessárias para proteger dados em diferentes cenários. A adoção dessas soluções é essencial para garantir a segurança e a conformidade dos ambientes de nuvem.</p>
+</body>
+</html>

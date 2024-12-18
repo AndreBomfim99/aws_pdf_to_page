@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteção de Recursos na AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Proteção de Recursos na AWS</h1>
+    <p>A Amazon Web Services (AWS) oferece um conjunto robusto de ferramentas e serviços que permitem aos clientes proteger seus recursos e dados na nuvem. A utilização de boas práticas de segurança combinada com estas soluções é essencial para proteger aplicações, dados e infraestrutura contra ameaças externas e internas.</p>
+
+    <h2>Principais Ferramentas de Proteção na AWS</h2>
+
+    <h3>Amazon Inspector</h3>
+    <p>O Amazon Inspector é uma ferramenta automatizada de avaliação de vulnerabilidades e conformidade. Ele ajuda os clientes a identificar riscos de segurança em instâncias do Amazon EC2 e em imagens de contêiner. As verificações incluem a detecção de configurações incorretas e vulnerabilidades conhecidas, auxiliando na manutenção de ambientes mais seguros.</p>
+
+    <h3>AWS Security Hub</h3>
+    <p>O AWS Security Hub centraliza e consolida achados de segurança de múltiplos serviços da AWS. Ele permite que os clientes obtenham uma visão unificada do estado de segurança de seus recursos, identificando riscos potenciais e ajudando a assegurar conformidade com padrões como PCI DSS e CIS Benchmarks.</p>
+
+    <h3>Amazon GuardDuty</h3>
+    <p>O Amazon GuardDuty oferece detecção inteligente de ameaças utilizando machine learning e análise comportamental. Ele monitora eventos de rede, logs de DNS e registros do AWS CloudTrail para identificar atividades maliciosas ou anômalas em contas da AWS, como acessos não autorizados ou possíveis explorações de vulnerabilidades.</p>
+
+    <h3>AWS Shield</h3>
+    <p>O AWS Shield protege aplicações contra ataques de negação de serviço distribuído (DDoS). A versão Standard está disponível para todos os clientes da AWS sem custo adicional, enquanto o AWS Shield Advanced oferece recursos adicionais, como mitigação personalizada e suporte especializado.</p>
+
+    <h2>Boas Práticas de Segurança</h2>
+    <ul>
+        <li>Implementar o princípio de privilégio mínimo utilizando o AWS Identity and Access Management (IAM).</li>
+        <li>Realizar análises regulares de vulnerabilidades com o Amazon Inspector.</li>
+        <li>Habilitar o AWS Security Hub para consolidar informações de segurança em um único painel.</li>
+        <li>Monitorar constantemente atividades suspeitas com o Amazon GuardDuty.</li>
+        <li>Proteger aplicações críticas contra ataques DDoS com o AWS Shield.</li>
+    </ul>
+
+    <h2>Conclusão</h2>
+    <p>Combinando ferramentas poderosas e boas práticas, os clientes podem aproveitar ao máximo os recursos de segurança da AWS para proteger seus ambientes de nuvem. Essa abordagem permite a detecção precoce de ameaças, uma resposta eficiente a incidentes e conformidade com requisitos regulatórios.</p>
+</body>
+</html>
